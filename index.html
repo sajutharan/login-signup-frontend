@@ -1,0 +1,73 @@
+<div>
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webdite with login and register</title>
+  <link rel="stylesheet" href="style.css" />
+  <header>
+    <h2 className="logo">Earthy Paving</h2>
+    <nav className="navigation">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Products</a>
+      <button className="btnLogin-popup">Login</button>
+    </nav></header>
+  <div className=" wrapper">
+    <span className="icon-close">
+      <ion-icon name="close-outline" />
+    </span>
+    <div className="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div className="input-box">
+          <span className="icon"><ion-icon name="mail" /></span>
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div className="input-box">
+          <span className="icon"><ion-icon name="lock-closed" /></span>
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div className="remember-forgot">
+          <lable><input type="checkbox" />Remember me</lable>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" className="btn">Login</button>
+        <div className="login-register">
+          <p> Don't have an accound?<a href="#" className="register-link">Register</a></p>
+        </div>
+      </form>
+    </div>
+    {/* login ends */}
+    {/* register starts */}
+    <div className="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div className="input-box">
+          <span className="icon"><ion-icon name="person" /></span>
+          <input type="text" required />
+          <label>Username</label>
+        </div>
+        <div className="input-box">
+          <span className="icon"><ion-icon name="mail" /></span>
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div className="input-box">
+          <span className="icon"><ion-icon name="lock-closed" /></span>
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div className="remember-forgot">
+          <lable><input type="checkbox" /> I agree to the terms &amp; conditions</lable>
+          {/* <a href ="#">Forgot Password?</a> */}
+        </div>
+        <button type="submit" className="btn">Register</button>
+        <div className="login-register">
+          <p> Already have an accound?<a href="#" className="login-link">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
